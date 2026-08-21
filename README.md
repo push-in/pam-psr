@@ -1,10 +1,10 @@
-# pushinbr/pam-psr-bridge
+# pushinbr/pam-psr
 
 PSR-7, PSR-15 and PSR-17 interoperability for Pam using the official PHP-FIG
 interfaces.
 
 ```bash
-pam composer require pushinbr/pam-psr-bridge
+pam composer require pushinbr/pam-psr
 ```
 
 Pass a PSR-15 handler and middleware to `Pam\App::handler()` and
@@ -19,7 +19,7 @@ modify, and distribute this package for any purpose, including commercially.
 
 ## Recommended PAM workflow
 
-Install inside an existing PAM project with `pam composer require pushinbr/pam-psr-bridge`. PAM performs the package operation through its private PHP runtime; a global PHP or Composer installation is not required.
+Install inside an existing PAM project with `pam composer require pushinbr/pam-psr`. PAM performs the package operation through its private PHP runtime; a global PHP or Composer installation is not required.
 
 Run `pam doctor` after dependency changes and before creating a release. The project remains a normal Composer project with a standard manifest, lockfile, PSR-4 autoloading, and `vendor/autoload.php`.
 
@@ -53,6 +53,6 @@ Pass a PSR-15 handler to `Pam\App::handler()` and PSR-15 middleware to `Pam\App:
 - [PAM introduction](https://push-in.github.io/pam-docs/introduction/)
 - [Package ecosystem](https://push-in.github.io/pam-docs/packages/overview/)
 - [Runtime compatibility](https://push-in.github.io/pam-docs/runtime/compatibility/)
-- [Report an issue](https://github.com/push-in/pam-psr-bridge/issues)
+- [Report an issue](https://github.com/push-in/pam-psr/issues)
 
 Report security vulnerabilities through GitHub private vulnerability reporting or the PAM security policy, not a public issue.
